@@ -1,6 +1,6 @@
 {
   "name": "get-browsers",
-  "version": "0.1.3",
+  "version": "0.1.0",
   "description": "Get ten most popular web browsers",
   "keywords": [
     "resolution",
