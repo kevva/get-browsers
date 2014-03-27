@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "description": "Get ten most popular web browsers",
   "keywords": [
-    "resolution",
-    "screen",
-    "size"
+    "browser",
+    "popular",
+    "w3counter"
   ],
   "homepage": "https://github.com/kevva/get-browsers",
   "bugs": "https://github.com/kevva/get-browsers/issues",
