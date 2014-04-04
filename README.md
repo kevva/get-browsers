@@ -1,12 +1,14 @@
 # get-browsers [![Build Status](https://travis-ci.org/kevva/get-browsers.png?branch=master)](http://travis-ci.org/kevva/get-browsers)
 
-Get ten most popular web browsers.
+> Get ten most popular web browsers.
 
 ## Getting started
 
-Install with [npm](https://npmjs.org/package/get-browsers): `npm install get-browsers`
+```bash
+$ npm install --save get-browsers
+```
 
-## Example
+## Usage
 
 ```js
 var getBrowsers = require('get-browsers');
@@ -17,12 +19,6 @@ getBrowsers(function (err, data) {
 })
 ```
 
-## API
-
-### getBrowsers(cb)
-
-Returns an array with the ten most popular web browsers from [w3counter.com](http://www.w3counter.com/globalstats.php).
-
 ## License
 
-[MIT License](http://en.wikipedia.org/wiki/MIT_License) (c) [Kevin Mårtensson](https://github.com/kevva)
+[MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Kevin Mårtensson](https://github.com/kevva)
