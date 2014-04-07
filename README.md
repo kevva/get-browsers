@@ -19,6 +19,23 @@ getBrowsers(function (err, data) {
 })
 ```
 
+## CLI
+
+You can also use it as a CLI app by installing it globally:
+
+```bash
+$ npm install --global get-browsers
+```
+
+### Usage
+
+```bash
+$ get-browsers --help
+
+Usage
+  $ get-browsers
+```
+
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Kevin Mårtensson](https://github.com/kevva)
