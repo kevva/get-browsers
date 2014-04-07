@@ -24,7 +24,7 @@
     "w3counter"
   ],
   "dependencies": {
-    "w3counter": "^0.1.0"
+    "w3counter": "^0.1.1"
   },
   "devDependencies": {
     "mocha": "^1.18.2"
