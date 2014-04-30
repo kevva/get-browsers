@@ -1,8 +1,8 @@
 # get-browsers [![Build Status](https://travis-ci.org/kevva/get-browsers.svg?branch=master)](https://travis-ci.org/kevva/get-browsers)
 
-> Get ten most popular web browsers.
+> Get ten most popular web browsers
 
-## Getting started
+## Install
 
 ```bash
 $ npm install --save get-browsers
@@ -21,13 +21,9 @@ getBrowsers(function (err, data) {
 
 ## CLI
 
-You can also use it as a CLI app by installing it globally:
-
 ```bash
 $ npm install --global get-browsers
 ```
-
-### Usage
 
 ```bash
 $ get-browsers --help
@@ -38,4 +34,4 @@ Usage
 
 ## License
 
-[MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Kevin Mårtensson](https://github.com/kevva)
+MIT © [Kevin Mårtensson](https://github.com/kevva)
