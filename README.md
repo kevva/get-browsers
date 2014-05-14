@@ -15,7 +15,7 @@ var getBrowsers = require('get-browsers');
 
 getBrowsers(function (err, data) {
     console.log(data);
-    // => ['Chrome 32', 'Safari 7', 'Chrome 33', 'Firefox 27', 'Internet Explorer 11', 'Firefox 26', 'Internet Explorer 8', 'Safari 6', 'Android 4', 'Internet Explorer 10']
+    // => [ { item: 'Chrome 34', percent: '20.71%' }, { item: 'Firefox 28', percent: '13.04%' }, ... ]
 })
 ```
 
