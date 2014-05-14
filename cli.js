@@ -44,6 +44,6 @@ getBrowsers(function (err, browsers) {
 
     browsers.forEach(function (browser, i) {
         i = i + 1;
-        console.log(i + '. ' + browser);
+        console.log(i + '. ' + browser.item);
     });
 });
