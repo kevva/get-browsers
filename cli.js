@@ -39,7 +39,8 @@ if (process.argv.indexOf('-v') !== -1 || process.argv.indexOf('--version') !== -
 
 getBrowsers(function (err, browsers) {
     if (err) {
-        throw err;
+        console.error(err);
+        process.exit(1);
     }
 
     browsers.forEach(function (browser, i) {

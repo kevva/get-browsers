@@ -1,14 +1,13 @@
-/*global describe, it */
 'use strict';
 
-var assert = require('assert');
 var getBrowsers = require('./');
+var test = require('ava');
 
-describe('getBrowsers()', function () {
-    it('should fetch 10 items', function (cb) {
-        getBrowsers(function (err, data) {
-            assert.strictEqual(data.length, 10);
-            cb();
-        });
+test('fetch 10 items', function (t) {
+    t.plan(2);
+
+    getBrowsers(function (err, data) {
+        t.assert(!err);
+        t.assert(data.length === 10);
     });
 });
