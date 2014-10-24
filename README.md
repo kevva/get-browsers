@@ -14,8 +14,8 @@ $ npm install --save get-browsers
 var getBrowsers = require('get-browsers');
 
 getBrowsers(function (err, data) {
-    console.log(data);
-    // => [ { item: 'Chrome 34', percent: '20.71%' }, { item: 'Firefox 28', percent: '13.04%' }, ... ]
+	console.log(data);
+	// => [ { item: 'Chrome 34', percent: '20.71%' }, { item: 'Firefox 28', percent: '13.04%' }, ... ]
 })
 ```
 
