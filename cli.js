@@ -2,49 +2,31 @@
 'use strict';
 
 var getBrowsers = require('./');
-var pkg = require('./package.json');
+var meow = require('meow');
 
 /**
- * Help screen
+ * Initialize CLI
  */
 
-function help() {
-    console.log(pkg.description);
-    console.log('');
-    console.log('Usage');
-    console.log('  $ get-browsers');
-}
-
-/**
- * Show help
- */
-
-if (process.argv.indexOf('-h') !== -1 || process.argv.indexOf('--help') !== -1) {
-    help();
-    return;
-}
-
-/**
- * Show package version
- */
-
-if (process.argv.indexOf('-v') !== -1 || process.argv.indexOf('--version') !== -1) {
-    console.log(pkg.version);
-    return;
-}
+meow({
+    help: [
+        '  Usage',
+        '    get-browsers'
+    ].join('\n')
+});
 
 /**
  * Run
  */
 
-getBrowsers(function (err, browsers) {
+getBrowsers(function (err, res) {
     if (err) {
         console.error(err);
         process.exit(1);
     }
 
-    browsers.forEach(function (browser, i) {
+    res.forEach(function (r, i) {
         i = i + 1;
-        console.log(i + '. ' + browser.item);
+        console.log(i + '. ' + r.item);
     });
 });
