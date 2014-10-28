@@ -10,8 +10,8 @@ var meow = require('meow');
 
 meow({
 	help: [
-		'  Usage',
-		'    get-browsers'
+		'Usage',
+		'  get-browsers'
 	].join('\n')
 });
 
