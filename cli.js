@@ -4,20 +4,12 @@
 var getBrowsers = require('./');
 var meow = require('meow');
 
-/**
- * Initialize CLI
- */
-
 meow({
 	help: [
 		'Usage',
 		'  get-browsers'
 	].join('\n')
 });
-
-/**
- * Run
- */
 
 getBrowsers(function (err, res) {
 	if (err) {
