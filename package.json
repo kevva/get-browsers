@@ -1,6 +1,6 @@
 {
   "name": "get-browsers",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Get ten most popular web browsers",
   "license": "MIT",
   "repository": "kevva/get-browsers",
