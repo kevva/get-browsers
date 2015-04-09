@@ -2,11 +2,13 @@
 
 > Get ten most popular web browsers
 
+
 ## Install
 
-```bash
+```
 $ npm install --save get-browsers
 ```
+
 
 ## Usage
 
@@ -16,21 +18,40 @@ var getBrowsers = require('get-browsers');
 getBrowsers(function (err, data) {
 	console.log(data);
 	//=> [{item: 'Chrome 34', percent: '20.71%'}, {item: 'Firefox 28', percent: '13.04%'}, ...]
-})
+});
 ```
+
+
+## API
+
+### getBrowsers(callback)
+
+Gets ten most popular web browsers from [w3counter](http://www.w3counter.com/globalstats.php).
+
+#### callback(err, data)
+
+Type: `function`
+
+##### data
+
+Type: `array`
+
+An array of objects containing the ten most popular web browsers.
+
 
 ## CLI
 
-```bash
+```
 $ npm install --global get-browsers
 ```
 
-```bash
+```
 $ get-browsers --help
 
-Usage
-  $ get-browsers
+  Usage
+    $ get-browsers
 ```
+
 
 ## License
 

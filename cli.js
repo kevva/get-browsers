@@ -1,19 +1,19 @@
 #!/usr/bin/env node
 'use strict';
 
-var getBrowsers = require('./');
 var meow = require('meow');
+var getBrowsers = require('./');
 
 meow({
 	help: [
 		'Usage',
-		'  get-browsers'
+		'  $ get-browsers'
 	].join('\n')
 });
 
 getBrowsers(function (err, res) {
 	if (err) {
-		console.error(err);
+		console.error(err.message);
 		process.exit(1);
 	}
 

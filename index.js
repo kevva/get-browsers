@@ -5,9 +5,10 @@ var w3counter = require('w3counter');
 module.exports = function (cb) {
 	w3counter('browser', function (err, data) {
 		if (err) {
-			return cb(err);
+			cb(err);
+			return;
 		}
 
-		return cb(null, data);
+		cb(null, data);
 	});
 };
