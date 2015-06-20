@@ -8,7 +8,7 @@ meow({
 	help: [
 		'Usage',
 		'  $ get-browsers'
-	].join('\n')
+	]
 });
 
 getBrowsers(function (err, res) {
