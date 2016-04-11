@@ -10,14 +10,9 @@ meow({
 	]
 });
 
-getBrowsers(function (err, res) {
-	if (err) {
-		console.error(err.message);
-		process.exit(1);
-	}
-
-	res.forEach(function (r, i) {
-		i = i + 1;
-		console.log(i + '. ' + r.item + ' (' + r.percent + ')');
+getBrowsers().then(function (data) {
+	data.forEach(function (x, i) {
+		i++;
+		console.log(i + '. ' + x.item + ' (' + x.percent + ')');
 	});
 });
