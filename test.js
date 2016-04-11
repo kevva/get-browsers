@@ -1,11 +1,4 @@
-'use strict';
-var test = require('ava');
-var getBrowsers = require('./');
+import test from 'ava';
+import fn from './';
 
-test('fetch 10 items', function (t) {
-	t.plan(1);
-
-	getBrowsers().then(function (data) {
-		t.assert(data.length === 10, data.length);
-	});
-});
+test('fetch 10 items', async t => t.is((await fn()).length, 10));

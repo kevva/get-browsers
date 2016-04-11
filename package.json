@@ -16,7 +16,7 @@
     "get-browsers": "cli.js"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "ava"
   },
   "files": [
     "cli.js",
@@ -32,6 +32,6 @@
     "w3counter": "^2.0.1"
   },
   "devDependencies": {
-    "ava": "^0.0.4"
+    "ava": "*"
   }
 }
