@@ -1,4 +1,4 @@
-# get-browsers [![Build Status](http://img.shields.io/travis/kevva/get-browsers.svg?style=flat)](https://travis-ci.org/kevva/get-browsers)
+# get-browsers [![Build Status](https://travis-ci.org/kevva/get-browsers.svg?branch=master)](https://travis-ci.org/kevva/get-browsers)
 
 > Get ten most popular web browsers
 

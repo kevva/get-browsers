@@ -1,4 +1,4 @@
 import test from 'ava';
-import fn from './';
+import m from './';
 
-test('fetch 10 items', async t => t.is((await fn()).length, 10));
+test('fetch 10 items', async t => t.is((await m()).length, 10));

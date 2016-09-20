@@ -9,11 +9,9 @@
     "email": "kevinmartensson@gmail.com",
     "url": "https://github.com/kevva"
   },
+  "bin": "cli.js",
   "engines": {
-    "node": ">=0.10.0"
-  },
-  "bin": {
-    "get-browsers": "cli.js"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -29,10 +27,13 @@
   ],
   "dependencies": {
     "meow": "^3.3.0",
-    "w3counter": "^2.0.1"
+    "w3counter": "^3.0.1"
   },
   "devDependencies": {
     "ava": "*",
     "xo": "*"
+  },
+  "xo": {
+    "esnext": true
   }
 }

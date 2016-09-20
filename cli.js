@@ -1,18 +1,18 @@
 #!/usr/bin/env node
 'use strict';
-var meow = require('meow');
-var getBrowsers = require('./');
+const meow = require('meow');
+const getBrowsers = require('./');
 
-meow({
-	help: [
-		'Usage',
-		'  $ get-browsers'
-	]
-});
+meow(`
+	Usage
+	  $ get-browsers
+`);
 
-getBrowsers().then(function (data) {
-	data.forEach(function (x, i) {
+getBrowsers().then(data => {
+	let i = 0;
+
+	for (const x of data) {
 		i++;
-		console.log(i + '. ' + x.item + ' (' + x.percent + ')');
-	});
+		console.log(`${i}. ${x.item} (${x.percent})`);
+	}
 });
