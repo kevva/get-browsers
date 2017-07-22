@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save get-browsers
+$ npm install get-browsers
 ```
 
 
@@ -26,7 +26,7 @@ getBrowsers().then(data => {
 
 ### getBrowsers()
 
-Returns a promise for an array with the ten most popular web browsers from [w3counter](http://www.w3counter.com/globalstats.php)
+Returns a `Promise` for an `Array` with the ten most popular web browsers from [w3counter](http://www.w3counter.com/globalstats.php)
 
 
 ## CLI

@@ -1,39 +1,36 @@
 {
-  "name": "get-browsers",
-  "version": "2.0.0",
-  "description": "Get ten most popular web browsers",
-  "license": "MIT",
-  "repository": "kevva/get-browsers",
-  "author": {
-    "name": "Kevin Mårtensson",
-    "email": "kevinmartensson@gmail.com",
-    "url": "https://github.com/kevva"
-  },
-  "bin": "cli.js",
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js",
-    "index.js"
-  ],
-  "keywords": [
-    "browser",
-    "popular",
-    "w3counter"
-  ],
-  "dependencies": {
-    "meow": "^3.3.0",
-    "w3counter": "^3.0.1"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  },
-  "xo": {
-    "esnext": true
-  }
+	"name": "get-browsers",
+	"version": "2.0.0",
+	"description": "Get ten most popular web browsers",
+	"license": "MIT",
+	"repository": "kevva/get-browsers",
+	"author": {
+		"name": "Kevin Mårtensson",
+		"email": "kevinmartensson@gmail.com",
+		"url": "https://github.com/kevva"
+	},
+	"bin": "cli.js",
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js",
+		"index.js"
+	],
+	"keywords": [
+		"browser",
+		"popular",
+		"w3counter"
+	],
+	"dependencies": {
+		"meow": "^3.3.0",
+		"w3counter": "^3.0.1"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	}
 }

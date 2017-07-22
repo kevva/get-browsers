@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 const meow = require('meow');
-const getBrowsers = require('./');
+const getBrowsers = require('.');
 
 meow(`
 	Usage
@@ -9,10 +9,10 @@ meow(`
 `);
 
 getBrowsers().then(data => {
-	let i = 0;
+	for (const item of data.entries()) {
+		const i = item[0] + 1;
+		const x = item[1];
 
-	for (const x of data) {
-		i++;
 		console.log(`${i}. ${x.item} (${x.percent})`);
 	}
 });
